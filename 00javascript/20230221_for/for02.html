@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    .clearfix::after{content: "";display: block;clear: both;}
+</style>
 
 <body>
     <div class="img">
@@ -74,8 +78,8 @@
         let imgView = ""
         for (let i=0;i<img.length;i++){
             imgView += "<div class='imgView'>"
-            imgView += "<img src='20230221_for\img/" + img[i] + "'>"
-            imgView += "<h3>" + txt[i] + "</h3>";
+            imgView += "<img src='../../images/" + img[i] + "'>"
+            imgView += "<div class='tWrap'><h3>" + txt[i] + "</h3>";
             imgView += "<p>" + content[i] + "</p>";
             imgView += "</div>"
         }
@@ -85,6 +89,15 @@
 
 
     </script>
+    
+    <div class="imgView">
+        <img src="" alt="">
+        <div class="tWrap">
+            <h3>test</h3>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+    </div>
+
 </body>
 
 </html>
