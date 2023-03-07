@@ -84,9 +84,16 @@
             imgView += "</div>"
         }
         console.log(imgView)
-        document.getElementsByClassName("img")[0].innerHTML = imgView
+        const imgElem = document.getElementsByClassName("img")[0];
+        imgElem.innerHTML = imgView;
 
+        imgElem.style.backgroundImage
+        
+        console.log(document.getElementsByClassName("img")[0].innerHTML) = imgView;
 
+        // // document.getElementsByClassName("img")[0].innerHTML은 선택자를 의미
+        // console.log(document.getElementsByClassName("img")[0].innerHTML) = imgView와
+        // document.getElementsByClassName("img")[0].innerHTML는 다르다
 
     </script>
     
